@@ -39,6 +39,8 @@ End Class
 
 
 Public Class PowerManagement
+  'Source: http://msdn.microsoft.com/en-us/library/windows/desktop/aa373208%28v=vs.85%29.aspx
+  '        http://www.vbforums.com/showthread.php?725077-Ensure-quot-Sleep-quot-is-disabled
 
   Private Sub New()
   End Sub
