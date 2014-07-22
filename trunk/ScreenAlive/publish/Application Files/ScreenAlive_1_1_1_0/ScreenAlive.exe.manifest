@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ScreenAlive.exe" version="1.1.1.0" publicKeyToken="ff7df41602f3c8fe" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ScreenAlive" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ScreenAlive.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet class="System.Security.PermissionSet" version="1" ID="Custom" SameSite="site" Unrestricted="true" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="3.0.0.0" publicKeyToken="31bf3856ad364e35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.IWshRuntimeLibrary.dll" size="49152">
+      <assemblyIdentity name="Interop.IWshRuntimeLibrary" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>mvtQo0VX/+fbYLW2T2HeJ1Vd+4c=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ScreenAlive.exe" size="34304">
+      <assemblyIdentity name="ScreenAlive" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>1H6zaYqy1B9NSS8XYwAsY+0F5d8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="ScreenAlive.exe.config" size="1319">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>84C5PgtM76tg05GJOSWZEhXHiKU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. 
+      Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows Vista, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"></supportedOS>-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+      <!-- If your application is designed to work with Windows 8, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"></supportedOS>-->
+      <!-- If your application is designed to work with Windows 8.1, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=GreenHillZone\GuySmily" issuerKeyHash="91817d9a906928a2c02f2f3f7ab10bf9f55a428f" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>idbGZ3G5MvNNaoksA3tcGNUTy7E=</DigestValue></Reference></SignedInfo><SignatureValue>WQIiyi6xiCtPXXvLFL9btW0R7BH0SevBgDYbgX6ZxDOAWuODT54kT3R5tFkLZXRZJzlM3BzkGX/xwukEh3vjXHXvPeFijQf1VT9PDqlad10jQ4RcFcVORs7Wdh4TlD/fjQDMqoOqNw6o1kLWd7TI+/YX4xpjdgc3cA1V8Csldgo=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>2m/MvgshDwpkzCDs+YGCtW2zwb+7X7HLPgVijGpncC9bzpg3F/Qu6c48DLInu4rFQ/yhlPPLK9GCNGnCUHT8A7jxkmlqA+Dn6wjZdBCW0U501F1hpfjCaQ9KdHnWDDpTPv5t2XKcfqEDBjWOMv/jfaZGGa5phx3wztY/4IHCzRs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="b1cb13d5185c7b032c896a4df332b97167c6d689" Description="" Url=""><as:assemblyIdentity name="ScreenAlive.exe" version="1.1.1.0" publicKeyToken="ff7df41602f3c8fe" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=GreenHillZone\GuySmily</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>KgVYbR4j4Kwz6VDSMsGoCRvCINA=</DigestValue></Reference></SignedInfo><SignatureValue>mHmguNA3qE2mviAxpr0tJf15tP0AU7xrnyOhdbhaXf9bqfYE/H//bCBz53e57MJIRT7BZdE9Kl87f82DSKMw9IZPLZ+5lgRUfOeGQ/8oNaVi9bkr+tqJHP08Eyw86avcBvcS19HJNP947Egy2BerIfIZJAaeghl7hBSk3nup31s=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>2m/MvgshDwpkzCDs+YGCtW2zwb+7X7HLPgVijGpncC9bzpg3F/Qu6c48DLInu4rFQ/yhlPPLK9GCNGnCUHT8A7jxkmlqA+Dn6wjZdBCW0U501F1hpfjCaQ9KdHnWDDpTPv5t2XKcfqEDBjWOMv/jfaZGGa5phx3wztY/4IHCzRs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB8TCCAVqgAwIBAgIQM+Qgzd+gI4JJZeItuakS3DANBgkqhkiG9w0BAQUFADA3MTUwMwYDVQQDHiwARwByAGUAZQBuAEgAaQBsAGwAWgBvAG4AZQBcAEcAdQB5AFMAbQBpAGwAeTAeFw0xNDA3MDEwNDM2MzBaFw0xNTA3MDExMDM2MzBaMDcxNTAzBgNVBAMeLABHAHIAZQBlAG4ASABpAGwAbABaAG8AbgBlAFwARwB1AHkAUwBtAGkAbAB5MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDab8y+CyEPCmTMIOz5gYK1bbPBv7tfscs+BWKMamdwL1vOmDcX9C7pzjwMsie7isVD/KGU88sr0YI0acJQdPwDuPGSaWoD4OfrCNl0EJbRTnTUXWGl+MJpD0p0edYMOlM+/m3Zcpx+oQMGNY4y/+N9pkYZrmmHHfDO1j/ggcLNGwIDAQABMA0GCSqGSIb3DQEBBQUAA4GBAG3nKIJg/sxPrx+jvE9XPYnt/+4SGMc+TwRYKlnlfeKpgXtiJxVFgNvnBVEb24WsdNGCLd4+OhEV2J47f7u+MTinBr7rjlcITMZJGJnLGGh9iXR8UiLbbUZ2oVxeFxWsWkw0YvS5nZFnLGTChrMJ7hbByVeIA2MZ+LEZ6E4+V4Go</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
